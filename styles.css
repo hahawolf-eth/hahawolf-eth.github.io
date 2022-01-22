@@ -5,17 +5,25 @@ body {
     margin: auto;
     font-family: monospace;
     font-size: 13px;
+
     color: #dddddd;
-    padding: 5px;
 
   }
+
+header {
+    text-align: center; 
+    font-size: 13px;
+    border-bottom-style: dotted;
+    border-width: 2px;
+    padding-bottom:12px;
+  }
   
-  a:link {
+  a:link, a:visited {
     color: limegreen;
     background-color: transparent;
   }
 
-  a:hover {
+  a:hover, a:visited:hover {
     color: red;
     background-color: transparent;
     text-decoration: underline;
@@ -31,5 +39,39 @@ body {
   }
 
   pre {
-    font-size: 11px; 
+    font-size: 9px; 
+    text-align: center;
+    margin-top: 15px;
   }
+
+  footer {
+    text-align: center; 
+    margin-top: 20px;
+    padding-top:8px;
+    padding-bottom:8px;
+  }
+
+
+  .item1 { grid-area: graphic;}
+  .item2 { 
+    grid-area: description;
+    border-left-style: dotted;
+    width:575px;
+    max-width:575px; 
+    border-width: 2px;
+    padding-left:10px; 
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'graphic description';
+    grid-gap: 10px;
+  }
+  
+  .grid-container > div {
+    text-align: left;
+    margin: 30px 0px 30px 0px;
+  }
+
+
