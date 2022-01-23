@@ -5,6 +5,7 @@ body {
     margin: auto;
     font-family: monospace;
     font-size: 13px;
+    line-height: 16px;
 
     color: #dddddd;
 
@@ -19,7 +20,7 @@ header {
   }
   
   a:link, a:visited {
-    color: limegreen;
+    color: rgb(255, 255, 153);
     background-color: transparent;
   }
 
@@ -30,10 +31,13 @@ header {
   }
 
   h1 {
-    color: white;
     text-align: center;
   }
   
+.notes{
+  color: rgb(180, 162, 142);
+}
+
   p {
     color: #dddddd
   }
@@ -42,6 +46,7 @@ header {
     font-size: 9px; 
     text-align: center;
     margin-top: 15px;
+    line-height: 9px;
   }
 
   footer {
